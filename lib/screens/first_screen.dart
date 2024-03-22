@@ -11,13 +11,21 @@ class FirstScreen extends StatefulWidget {
 class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Stack(
+    return Stack(
+      alignment: Alignment.center,
+      fit: StackFit.expand,
       children: [
-        Center(
-        child: Text(appName, style: TextStyle(
-          fontSize: 35
-        ))
-      )],
+        Center(child: Text(appName, style: TextStyle(fontSize: 35))),
+        Image.asset(
+          'assets/imgs/desk.png',
+          fit: BoxFit.cover,
+        ),
+        TextButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/home');
+            },
+            child: Text(''))
+      ],
     );
   }
 }
