@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nigerquiz/config/theme/theme.dart';
 import 'package:nigerquiz/data/static_datas/global.dart';
-import 'package:nigerquiz/screens/home_screen.dart';
+import 'package:nigerquiz/ui/screens/home_screen.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    AppTheme appTheme = new AppTheme();
+    AppTheme appTheme = AppTheme();
     return MaterialApp(
         title: appName, theme: appTheme.appTheme, home: const HomeScreen());
   }
