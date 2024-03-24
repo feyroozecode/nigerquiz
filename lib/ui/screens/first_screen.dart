@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nigerquiz/data/static_datas/global.dart';
+import 'package:nigerquiz/config/theme/styles.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({super.key});
@@ -9,13 +9,15 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
+  AppStyles appStyle = AppStyles();
+
   @override
   Widget build(BuildContext context) {
     return Stack(
       alignment: Alignment.center,
       fit: StackFit.expand,
       children: [
-        Center(child: Text(appName, style: TextStyle(fontSize: 35))),
+        //const Center(child: Text(appName, style: appStyle.pageTitle)),
         Image.asset(
           'assets/imgs/desk.png',
           fit: BoxFit.cover,
@@ -24,7 +26,7 @@ class _FirstScreenState extends State<FirstScreen> {
             onPressed: () {
               Navigator.pushNamed(context, '/home');
             },
-            child: Text(''))
+            child: const Text(''))
       ],
     );
   }

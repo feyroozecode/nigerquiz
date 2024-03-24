@@ -1,0 +1,18 @@
+{
+        "questions" : [
+            {
+                "id": 1,
+                "category": "hist/geo",
+                "text": "What is the capital of France?",
+                "answers": ["London", "Paris", "Berlin", "Madrid"],
+                "correctAnswerIndex": 1
+            }, 
+             {
+                "id": 1,
+                "category": "hist/geo",
+                "text": "What is the capital of France?",
+                "answers": ["London", "Paris", "Berlin", "Madrid"],
+                "correctAnswerIndex": 1
+            }
+        ]
+}
